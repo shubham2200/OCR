@@ -28,7 +28,8 @@ def home(request):
         if search_result not in images:
             print('search_result----nooo')
         else:
-            print('yesss',search_result )
+            # search_result+=list(f images[])
+            print('yesss', images )
             return JsonResponse({'data':search_result , 'image': images})
         # for file in images:
         #     # print(file)
